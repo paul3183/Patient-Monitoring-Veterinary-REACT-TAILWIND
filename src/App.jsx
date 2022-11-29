@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import Form from './components/Form'
 import Header from './components/Header'
 import PatientList from './components/PatientList'
+import Dark from './components/Dark'
 
 
 function App() {
@@ -28,23 +29,28 @@ function App() {
   }
 
   return (
-    <div className='container mx-auto mt-20'>
-      <Header />
+    <div className='dark:bg-[#09090b] bg-[#e4d8b4] text-black dark:text-[#dca44b]'>
+      <Dark />
+      <div className='container mx-auto mt-20'>
 
-      <div className='mt-12 md:flex '>
-        <Form
-          patients={patients}
-          setPatients={setPatients}
-          patient={patient}
-          setPatient={setPatient}
-        />
-        <PatientList
-          patients={patients}
-          setPatient={setPatient}
-          deletePatient={deletePatient}
-        />
+        <Header />
+
+        <div className='mt-12 md:flex '>
+          <Form
+            patients={patients}
+            setPatients={setPatients}
+            patient={patient}
+            setPatient={setPatient}
+          />
+          <PatientList
+            patients={patients}
+            setPatient={setPatient}
+            deletePatient={deletePatient}
+          />
+        </div>
       </div>
     </div>
+
   )
 }
 
