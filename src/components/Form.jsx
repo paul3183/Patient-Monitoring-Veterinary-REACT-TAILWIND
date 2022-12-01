@@ -77,7 +77,7 @@ const Form = ({ patients, setPatients, patient, setPatient }) => {
     setSymptoms('')
 
   }
-  az
+
   return (
     <div className='md:w-2/5 mx-3'>
       <h2 className='font-black text-3xl text-center'>Patient Monitoring</h2>
