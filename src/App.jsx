@@ -31,7 +31,7 @@ function App() {
   return (
     <div className='dark:bg-[#09090b] bg-[#e4d8b4] text-black dark:text-[#dca44b]'>
       <Dark />
-      <div className='container mx-auto mt-20'>
+      <div className='container mx-auto pt-20'>
 
         <Header />
 

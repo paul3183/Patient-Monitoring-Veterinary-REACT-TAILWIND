@@ -18,7 +18,7 @@ const Dark = () => {
   }
   return (
 
-    <label className="swap swap-rotate">
+    <label className="swap swap-rotate fixed top-3 left-5">
 
 
       <input
