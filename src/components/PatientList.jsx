@@ -14,7 +14,7 @@ const PatientList = ({ patients, setPatient, deletePatient }) => {
           <h2 className='font-black text-3xl text-center'>Patient List</h2>
           <p className='text-lg mt-5 text-center mb-7'>
             Manage your {''}
-            <span className='text-indigo-600 font-semibold'>patients and appointments</span>
+            <span className='text-indigo-700 font-bold'>Patients and Appointments</span>
           </p>
           <div key={patients.email} className='md:h-screen md:overflow-y-scroll'>
             {patients.map((patient) => (

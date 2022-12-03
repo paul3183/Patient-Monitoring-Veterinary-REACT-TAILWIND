@@ -83,7 +83,7 @@ const Form = ({ patients, setPatients, patient, setPatient }) => {
       <h2 className='font-black text-3xl text-center'>Patient Monitoring</h2>
       <p className='text-lg mt-5 text-center mb-10'>
         Add Patients and {''}
-        <span className='text-indigo-600 font-bold '>Manage Them</span>
+        <span className='text-indigo-700 font-bold '>Manage Them</span>
       </p>
       <form
         onSubmit={handleSubmit}
@@ -91,58 +91,58 @@ const Form = ({ patients, setPatients, patient, setPatient }) => {
 
         {error && <Error><p>Todos los campos son obligatorios</p></Error >}
 
-        <div className=''>
-          <label className='block text-gray-700 uppercase font-bold' htmlFor="pet">Pet Name</label>
+        <div className=' '>
+          <label className='block uppercase font-bold' htmlFor="pet">Pet Name</label>
           <input
             id='pet'
             type="text"
             placeholder='Pet Name'
-            className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
+            className='border-2 w-full p-2 mt-2 dark:placeholder-[#dca44b] text-white rounded-md'
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
         </div>
         <div className='mt-5'>
-          <label className='block text-gray-700 uppercase font-bold' htmlFor="owner">Owner Name</label>
+          <label className='block uppercase font-bold' htmlFor="owner">Owner Name</label>
           <input
             id='owner'
             type="text"
             placeholder='Owner Name'
-            className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
+            className='border-2 w-full p-2 mt-2 rounded-md dark:placeholder-[#dca44b] text-white '
             value={owner}
             onChange={(e) => setOwner(e.target.value)}
           />
         </div>
         <div className='mt-5'>
-          <label className='block text-gray-700 uppercase font-bold' htmlFor="email">Email</label>
+          <label className='block uppercase font-bold' htmlFor="email">Email</label>
           <input
             id='email'
             type="email"
             placeholder='Owner Contact Email'
-            className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
+            className='border-2 w-full p-2 mt-2 dark:placeholder-[#dca44b] rounded-md text-white '
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div className='mt-5'>
-          <label className='block text-gray-700 uppercase font-bold' htmlFor="released">Released</label>
+          <label className='block uppercase font-bold' htmlFor="released">Released</label>
           <input
             id='released'
             type="date"
-            className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'
+            className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md dark:text-[#dca44b] text-white'
             value={released}
             onChange={(e) => setReleased(e.target.value)}
           />
         </div>
         <div className='mt-5'>
-          <label className='block text-gray-700 uppercase font-bold' htmlFor="symptoms">Symptoms</label>
-          <textarea className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md' name="symptoms" id=" symptoms" cols="30" rows="10" placeholder=''
+          <label className='block uppercase font-bold' htmlFor="symptoms">Symptoms</label>
+          <textarea className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md text-white ' name="symptoms" id=" symptoms" cols="30" rows="10" placeholder=''
             value={symptoms}
             onChange={(e) => setSymptoms(e.target.value)} />
         </div>
         <input
           type="submit"
-          className='bg-indigo-600 w-full p-3 text-white uppercase font-bold hover:bg-indigo-700 cursor-pointer transition-colors'
+          className='bg-indigo-600 w-full p-3 text-white uppercase font-bold hover:bg-indigo-700 cursor-pointer transition-colors rounded-lg'
           value={patient.id ? 'Edit Patient' : 'Add Patient'} />
       </form>
     </div >
