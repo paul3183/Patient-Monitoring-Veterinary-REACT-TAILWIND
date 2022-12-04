@@ -89,7 +89,7 @@ const Form = ({ patients, setPatients, patient, setPatient }) => {
         onSubmit={handleSubmit}
         className='bg-white shadow-md rounded-lg py-10 px-5' >
 
-        {error && <Error><p>Todos los campos son obligatorios</p></Error >}
+        {error && <Error><p>ALL FIELDS ARE REQUIRED</p></Error >}
 
         <div className=' '>
           <label className='block uppercase font-bold' htmlFor="pet">Pet Name</label>

@@ -29,7 +29,7 @@ function App() {
   }
 
   return (
-    <div className='dark:bg-[#09090b] bg-[#e4d8b4] text-black dark:text-[#dca44b]'>
+    <div className='dark:bg-[#09090b] bg-[#e4d8b4] text-black dark:text-[#dca44b] py-3'>
       <Dark />
       <div className='container mx-auto pt-20'>
 

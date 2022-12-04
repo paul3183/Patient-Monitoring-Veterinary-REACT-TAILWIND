@@ -31,7 +31,7 @@ const PatientList = ({ patients, setPatient, deletePatient }) => {
       ) : (
         <>
           <h2 className='font-black text-3xl text-center'>No Patient List Exists</h2>
-          <p className='text-lg mt-5 text-center mb-7'>
+          <p className='text-lg mt-5 text-center'>
             Start Adding Patients {''}
             <span className='text-indigo-600 font-semibold'>/ loading list</span>
           </p>
