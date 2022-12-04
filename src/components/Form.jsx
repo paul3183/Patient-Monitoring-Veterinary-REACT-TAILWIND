@@ -79,7 +79,7 @@ const Form = ({ patients, setPatients, patient, setPatient }) => {
   }
 
   return (
-    <div className='md:w-2/5 mx-3'>
+    <div className='md:w-2/5 mx-4'>
       <h2 className='font-black text-3xl text-center'>Patient Monitoring</h2>
       <p className='text-lg mt-5 text-center mb-10'>
         Add Patients and {''}
